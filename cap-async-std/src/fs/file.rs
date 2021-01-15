@@ -25,6 +25,7 @@ use unsafe_io::AsUnsafeFile;
 /// [`Dir`]: crate::fs::Dir
 /// [`Dir::open`]: crate::fs::Dir::open
 /// [`Dir::create`]: crate::fs::Dir::create
+#[derive(Clone)]
 pub struct File {
     pub(crate) std: fs::File,
 }

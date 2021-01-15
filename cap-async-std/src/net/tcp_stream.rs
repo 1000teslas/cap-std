@@ -20,6 +20,7 @@ use std::pin::Pin;
 ///
 /// [`Catalog`]: struct.Catalog.html
 /// [`Catalog::connect_tcp_stream`]: struct.Catalog.html#method.connect_tcp_stream
+#[derive(Clone)]
 pub struct TcpStream {
     std: net::TcpStream,
 }

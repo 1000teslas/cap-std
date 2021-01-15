@@ -20,6 +20,7 @@ use std::pin::Pin;
 /// [`async_std::os::unix::net::UnixStream`]: https://docs.rs/async-std/latest/async_std/os/unix/net/struct.UnixStream.html
 /// [`Dir`]: struct.Dir.html
 /// [`Dir::connect_unix_stream`]: struct.Dir.html#method.connect_unix_stream
+#[derive(Clone)]
 pub struct UnixStream {
     std: unix::net::UnixStream,
 }
